@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Karma tests: Attach Chrome",
+      "address": "localhost",
+      "port": 9222,
+      "pathMapping": {
+        "/": "${workspaceRoot}/",
+        "/base/": "${workspaceRoot}/"
+      }
+    }
+  ]
+}

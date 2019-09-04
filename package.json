@@ -1,0 +1,54 @@
+{
+  "name": "personal-website",
+  "version": "0.0.1",
+  "description": "My personal website, it's a simple progressive web application powered by web components!",
+  "main": "index.html",
+  "repository": "git@github.com:pdesjardins90/personal-website.git",
+  "author": "Philippe Desjardins <pdesjardins90@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && rollup -c rollup.config.js && workbox generateSW",
+    "format": "yarn run format:eslint && yarn run format:prettier",
+    "format:eslint": "eslint --ext .js,.html . --fix",
+    "format:prettier": "prettier \"**/*.js\" --write",
+    "lint": "yarn run lint:eslint && yarn run lint:prettier",
+    "lint:eslint": "eslint --ext .js,.html .",
+    "lint:prettier": "prettier \"**/*.js\" --list-different || (echo '↑↑ these files are not prettier formatted ↑↑' && exit 1)",
+    "start": "es-dev-server",
+    "start:build": "es-dev-server -r dist",
+    "start:coverage": "es-dev-server -r coverage",
+    "test": "karma start --coverage",
+    "test:debug:serve": "karma start --no-single-run",
+    "test:debug:run": "karma run"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.1",
+    "lit-html": "^1.1.2",
+    "pwa-helpers": "^0.9.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@open-wc/building-rollup": "^0.9.28",
+    "@open-wc/eslint-config": "^1.1.1",
+    "@open-wc/prettier-config": "^0.1.10",
+    "@open-wc/testing": "^2.3.3",
+    "@open-wc/testing-karma": "^3.1.32",
+    "deepmerge": "^4.0.0",
+    "es-dev-server": "^1.17.2",
+    "eslint": "^6.3.0",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
+    "rollup": "^1.20.3",
+    "rollup-plugin-cpy": "^2.0.1",
+    "sinon": "^7.4.2",
+    "workbox-cli": "^4.3.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

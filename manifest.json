@@ -1,0 +1,21 @@
+{
+  "name": "Philippe Desjardins",
+  "short_name": "Philippe Desjardins",
+  "description": "Software engineer, specialized in web development",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1A1C1D",
+  "theme_color": "#1A1C1D",
+  "icons": [
+    {
+      "src": "/images/manifest/manifest-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/manifest/manifest-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

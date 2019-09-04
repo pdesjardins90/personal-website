@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Philippe Desjardins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Software engineer, specialized in web development">
+    <meta name="author" content="pdesjardins90">
+    <meta name="keywords" content="software engineer,software developer,web developer,developer,frontend,backend,pdesjardins90">
+    <meta name="copyright" content="Philippe Desjardins Software">
+    <meta name="language" content="EN">
+    <meta name="generator" content="open-wc">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Philippe Desjardins">
+    <link rel="apple-touch-icon" href="images/manifest/manifest-48.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/manifest-72.png">
+    <link rel="apple-touch-icon" sizes="96x96" href="images/manifest/manifest-96.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/manifest-144.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/manifest-192.png">
+    <link rel="apple-touch-startup-image" href="images/launch/iphone5.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/launch/iphone6.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/launch/iphoneplus.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="images/launch/iphonex.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="images/launch/iphonexr.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/launch/iphonexsmax.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" />
+    <link rel="apple-touch-startup-image" href="images/launch/ipad.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/launch/ipadpro1.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/launch/ipadpro2.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="images/launch/ipadpro3.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" />
+
+    <!-- Android -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1A1C1D">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Philippe Desjardins">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@pdesjardins90">
+    <meta name="twitter:creator" content="@pdesjardins90">
+    <meta name="twitter:title" content="Philippe Desjardins">
+    <meta name="twitter:description" content="Freelance software engineer, specialized in web development" />
+    <meta name="twitter:image" content="https://philippe-desjardins.com/images/manifest/manifest-144.png" />
+    <meta name="twitter:image:alt" content="Philippe Desjardins logo" />
+
+    <!-- Open Graph Link -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://philippe-desjardins.com/" />
+    <meta property="og:title" content="Philippe Desjardins" />
+    <meta property="og:description" content="Freelance software engineer, specialized in web development" />
+    <meta property="og:image" content="https://philippe-desjardins.com/images/manifest/manifest-144.png" />
+    <meta property="og:image:alt" content="Philippe Desjardins logo" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_CA" />
+
+    <!-- Service worker registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => navigator.serviceWorker.register('service-worker.js'))
+      }
+    </script>
+
+    <script type="module" src="sources/app/personal-website.js" defer></script>
+    <style>
+      /* Variables */
+
+      html {
+        --color-primary: #15B0E6;
+        --color-primary-lighter: #68E2FF;
+        --color-primary-darker: #0081B4;
+        --color-secondary: #E6B415;
+        --color-secondary-lighter: #FFE652;
+        --color-secondary-darker: #AF8500;
+        --color-background: #1A1C1D;
+        --color-background-lighter: #232627;
+        --color-background-darker: #101212;
+        --color-surface: #161F24;
+        --color-surface-lighter: #3C464C;
+        --color-surface-darker: #020A0D;
+        --color-error: #E61548;
+        --color-error-lighter: #FF5B73;
+        --color-error-darker: #AC0021;
+        --color-divider: rgba(255, 255, 255, 0.12);
+        --color-text-on-primary-high: rgba(0, 0, 0, 0.9);
+        --color-text-on-primary-medium: rgba(0, 0, 0, 0.65);
+        --color-text-on-primary-disabled: rgba(0, 0, 0, 0.4);
+        --color-text-on-secondary-high: rgba(0, 0, 0, 0.9);
+        --color-text-on-secondary-medium: rgba(0, 0, 0, 0.65);
+        --color-text-on-secondary-disabled: rgba(0, 0, 0, 0.4);
+        --color-text-on-background-high: rgba(255, 255, 255, 0.9);
+        --color-text-on-background-medium: rgba(255, 255, 255, 0.65);
+        --color-text-on-background-disabled: rgba(255, 255, 255, 0.4);
+        --color-text-on-surface-high: rgba(255, 255, 255, 0.9);
+        --color-text-on-surface-medium: rgba(255, 255, 255, 0.65);
+        --color-text-on-surface-disabled: rgba(255, 255, 255, 0.4);
+        --color-text-on-error: #000000;
+        --font-family-primary: 'Menlo', 'Lucida Console', monospace;
+        --font-family-secondary: 'Helvetica Neue', 'Arial', sans-serif;
+        --overlay-primary-low: rgba(2, 185, 249, 0.05);
+        --overlay-primary-medium: rgba(2, 185, 249, 0.08);
+        --overlay-primary-high: rgba(2, 185, 249, 0.13);
+        --radius-for-small: 0;
+        --radius-for-medium: 1px;
+        --radius-for-large: 1px;
+        --shadow-3dp: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+                      0 1px 8px 0 rgba(0, 0, 0, 0.12),
+                      0 3px 3px -2px rgba(0, 0, 0, 0.4);
+        --shadow-6dp: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+                      0 1px 18px 0 rgba(0, 0, 0, 0.12),
+                      0 3px 5px -1px rgba(0, 0, 0, 0.4);
+        --shadow-primary: 0 0 20px 5px rgba(21, 176, 230, 0.4),
+                          inset 0 0 20px 20px rgba(21, 176, 230, 0.4);
+        --shadow-secondary: 0 0 20px 5px rgba(230, 180, 21, 0.4),
+                            inset 0 0 20px 20px rgba(230, 180, 21, 0.4);
+        --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        --ios-safari-navigation-bar-height: 70px;
+      }
+
+      @media (max-width: 320px) {
+        html {
+          font-size: 12px;
+          --base-spacing: 0.6rem;
+        }
+      }
+
+      @media (min-width: 321px) and (max-width: 375px) {
+        html {
+          font-size: 14px;
+          --base-spacing: 0.6rem;
+        }
+      }
+
+      @media (min-width: 376px) and (max-width: 414px) {
+        html {
+          font-size: 16px;
+          --base-spacing: 0.8rem;
+        }
+      }
+
+      @media (min-width: 415px) and (max-width: 768px) {
+        html {
+          font-size: 20px;
+          --base-spacing: 1.2rem;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 834px) {
+        html {
+          font-size: 20px;
+          --base-spacing: 1.5rem;
+        }
+      }
+
+      @media (min-width: 835px) and (max-width: 1024px) {
+        html {
+          font-size: 20px;
+          --base-spacing: 2rem;
+        }
+      }
+
+      @media (min-width: 1025px) {
+        html {
+          font-size: 24px;
+          --base-spacing: 2.5rem;
+        }
+      }
+
+      /* Global */
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+
+      html {
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      body {
+        width: 100%;
+        height: auto;
+        background-color: var(--color-background);
+        color: var(--color-text-on-background-high);
+        font-size: 0.8rem;
+        font-family: var(--font-family-primary);
+        letter-spacing: -0.02em;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Booting styles */
+
+      @keyframes splash {
+        from {
+          opacity: 1;
+        }
+
+        to {
+          opacity: 0.5;
+        }
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      personal-website[unresolved] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      personal-website:not([unresolved]) {
+        animation: fadein 0.2s;
+      }
+
+      personal-website[unresolved] img {
+        animation: splash 1s ease-in 0.5s infinite alternate;
+        width: 10.2rem;
+        height: 10.2rem;
+      }
+
+      personal-website[unresolved] noscript {
+        margin-top: 1.2rem;
+        max-width: 18rem;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <personal-website unresolved>
+      <img src="images/logos/pdesjardins90-logo.svg" alt="Loading..." />
+      <noscript>Please enable JavaScript to view this website</noscript>
+    </personal-website>
+  </body>
+</html>
