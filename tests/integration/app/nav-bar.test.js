@@ -10,17 +10,17 @@ describe('<nav-bar>', () => {
       component = await fixture(html`
         <nav-bar></nav-bar>
       `)
-      menuButton = component.shadowRoot.querySelector('i')
     })
 
     context('when navigation menu is opened', () => {
       beforeEach(async () => {
         component.isNavigationMenuOpened = true
         await component.updateComplete
+        menuButton = component.shadowRoot.querySelector('svg')
       })
 
       it('is a close icon', () => {
-        expect(menuButton.textContent).to.equal('close')
+        expect(menuButton.classList.contains('close-icon')).to.be.true
       })
     })
 
@@ -28,10 +28,11 @@ describe('<nav-bar>', () => {
       beforeEach(async () => {
         component.isNavigationMenuOpened = false
         await component.updateComplete
+        menuButton = component.shadowRoot.querySelector('svg')
       })
 
       it('is a menu icon', () => {
-        expect(menuButton.textContent).to.equal('menu')
+        expect(menuButton.classList.contains('menu-icon')).to.be.true
       })
     })
   })
