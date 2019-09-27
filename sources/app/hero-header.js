@@ -33,7 +33,7 @@ export class HeroHeader extends BaseElement {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          object-position: left center;
+          object-position: right center;
           z-index: -1;
         }
 
@@ -44,9 +44,9 @@ export class HeroHeader extends BaseElement {
           box-sizing: border-box;
           display: flex;
           flex-direction: column;
-          align-items: flex-end;
+          align-items: flex-start;
           justify-content: space-between;
-          background-image: linear-gradient(-60deg, rgba(0, 0, 0, 0.54), transparent);
+          background-image: linear-gradient(60deg, rgba(0, 0, 0, 0.54), transparent);
           color: var(--color-text-on-background-high);
         }
 
@@ -57,7 +57,7 @@ export class HeroHeader extends BaseElement {
         }
 
         [social-links] a {
-          margin-left: 1.2rem;
+          margin-right: 1.2rem;
         }
 
         [social-links] img {
@@ -71,8 +71,8 @@ export class HeroHeader extends BaseElement {
           bottom: var(--ios-safari-navigation-bar-height);
           display: flex;
           flex-direction: column;
-          align-items: flex-end;
-          text-align: right;
+          align-items: flex-start;
+          text-align: left;
         }
 
         h1 {
@@ -107,6 +107,14 @@ export class HeroHeader extends BaseElement {
         }
 
         @media (max-width: 668px) {
+          #hero {
+            object-position: 80% center;
+          }
+
+          header {
+            padding: calc(2 * var(--base-spacing)) var(--base-spacing);
+          }
+
           h1 {
             font-size: 1.5rem;
             margin-bottom: 0.6rem;
@@ -115,36 +123,6 @@ export class HeroHeader extends BaseElement {
           h3 {
             font-size: 1rem;
             margin-bottom: 0.3rem;
-          }
-        }
-
-        @media (max-width: 567px) {
-          [presentation] {
-            max-width: 100%;
-          }
-        }
-
-        @media (min-width: 568px) and (max-width: 768px) {
-          [presentation] {
-            max-width: 60%;
-          }
-        }
-
-        @media (min-width: 769px) and (max-width: 1200px) {
-          [presentation] {
-            max-width: 50%;
-          }
-        }
-
-        @media (min-width: 1201px) {
-          [presentation] {
-            max-width: 40%;
-          }
-        }
-
-        @media (max-width: 768px) {
-          [social-links] {
-            margin: 1rem;
           }
         }
       `
@@ -157,16 +135,13 @@ export class HeroHeader extends BaseElement {
         id="hero"
         src="/images/photos/hero/hero-1366.jpg"
         srcset="
-          /images/photos/hero/hero-320.jpg   320w,
-          /images/photos/hero/hero-375.jpg   375w,
-          /images/photos/hero/hero-414.jpg   414w,
-          /images/photos/hero/hero-568.jpg   568w,
-          /images/photos/hero/hero-667.jpg   667w,
-          /images/photos/hero/hero-768.jpg   768w,
-          /images/photos/hero/hero-834.jpg   834w,
           /images/photos/hero/hero-1024.jpg 1024w,
           /images/photos/hero/hero-1112.jpg 1112w,
-          /images/photos/hero/hero-1366.jpg 1366w
+          /images/photos/hero/hero-1242.jpg 1242w,
+          /images/photos/hero/hero-1366.jpg 1366w,
+          /images/photos/hero/hero-1536.jpg 1536w,
+          /images/photos/hero/hero-1668.jpg 1668w,
+          /images/photos/hero/hero-2048.jpg 2048w
         "
         alt="${this.language === 'fr' ? 'Arrière-plan héros' : 'Hero background'}"
       />
