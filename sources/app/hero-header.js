@@ -172,14 +172,17 @@ export class HeroHeader extends BaseElement {
       />
       <header>
         <span social-links>
+          <a rel="noreferrer noopener" href="https://dev.to/pdesjardins90">
+            <img src="/images/logos/dev.svg" alt="Philippe Desjardins's DEV Profile" />
+          </a>
           <a rel="noreferrer noopener" href="https://github.com/pdesjardins90">
-            <img src="/images/logos/github.svg" alt="GitHub logo" />
+            <img src="/images/logos/github.svg" alt="Philippe Desjardins's GitHub profile" />
           </a>
           <a rel="noreferrer noopener" href="https://twitter.com/pdesjardins90">
-            <img src="/images/logos/twitter.svg" alt="Twitter logo" />
+            <img src="/images/logos/twitter.svg" alt="Philippe Desjardins's Twitter profile" />
           </a>
           <a rel="noreferrer noopener" href="https://linkedin.com/in/pdesjardins90/">
-            <img src="/images/logos/linkedin.svg" alt="LinkedIn logo" />
+            <img src="/images/logos/linkedin.svg" alt="Philippe Desjardins's LinkedIn profile" />
           </a>
         </span>
         <div presentation>
