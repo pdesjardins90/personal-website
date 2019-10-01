@@ -3,8 +3,27 @@ import { BaseElement, css, html } from '../../components/base-element.js'
 export class BlogSection extends BaseElement {
   static get properties() {
     return {
-      language: { type: String }
+      language: { type: String },
+      articles: { type: Array }
     }
+  }
+
+  constructor() {
+    super()
+    this.articles = [
+      {
+        title: 'Web Components Fundamentals, Part 3/3',
+        url: 'https://dev.to/pdesjardins90/web-components-fundamentals-part-3-1kge',
+        coverImageUrl:
+          'https://res.cloudinary.com/practicaldev/image/fetch/s--oo8TciyU--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--bYM1BLYl--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/omhgqj6ud0k0l1bslkxw.jpeg'
+      },
+      {
+        title: 'Web Components Fundamentals, Part 2/3',
+        url: 'https://dev.to/pdesjardins90/web-components-fundamentals-part-2-486j',
+        coverImageUrl:
+          'https://res.cloudinary.com/practicaldev/image/fetch/s--YN140gPU--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--YCtnCQ62--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/vaaof0dbnci96i5315km.JPG'
+      }
+    ]
   }
 
   static get styles() {
@@ -124,26 +143,19 @@ export class BlogSection extends BaseElement {
         ${this.language === 'fr' ? `Mes derniers articles de blogue` : 'My latest blog posts'}
       </h2>
       <ul>
-        <li>
-          <img
-            src="https://res.cloudinary.com/practicaldev/image/fetch/s--oo8TciyU--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--bYM1BLYl--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/omhgqj6ud0k0l1bslkxw.jpeg"
-          />
-          <a
-            rel="noreferrer noopener"
-            href="https://dev.to/pdesjardins90/web-components-fundamentals-part-3-1kge"
-            >Web Components Fundamentals, Part 3/3</a
-          >
-        </li>
-        <li>
-          <img
-            src="https://res.cloudinary.com/practicaldev/image/fetch/s--YN140gPU--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--YCtnCQ62--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/vaaof0dbnci96i5315km.JPG"
-          />
-          <a
-            rel="noreferrer noopener"
-            href="https://dev.to/pdesjardins90/web-components-fundamentals-part-2-486j"
-            >Web Components Fundamentals, Part 2/3</a
-          >
-        </li>
+        ${this.articles.map(
+          article => html`
+            <li>
+              <img
+                src="${article.coverImageUrl}"
+                alt="${this.language === 'fr'
+                  ? `Image de couverture de '${article.title}'`
+                  : `Cover image of '${article.title}'`}"
+              />
+              <a rel="noreferrer noopener" href="${article.url}">${article.title}</a>
+            </li>
+          `
+        )}
       </ul>
       <a rel="noreferrer noopener" href="https://dev.to/pdesjardins90">
         <button>${this.language === 'fr' ? 'En lire plus' : 'Read more'}</button>
