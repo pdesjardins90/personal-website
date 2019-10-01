@@ -68,6 +68,7 @@ export class HeroHeader extends BaseElement {
         [presentation] {
           position: -webkit-sticky;
           position: sticky;
+          width: 100%;
           bottom: var(--ios-safari-navigation-bar-height);
           display: flex;
           flex-direction: column;
@@ -75,8 +76,17 @@ export class HeroHeader extends BaseElement {
           text-align: left;
         }
 
-        h1 {
+        [presentation] h1,
+        [presentation] h3 {
+          margin-bottom: var(--base-spacing);
+        }
+
+        [presentation] h1 {
           white-space: nowrap;
+        }
+
+        [presentation] a {
+          align-self: flex-end;
         }
 
         button {
@@ -96,6 +106,7 @@ export class HeroHeader extends BaseElement {
           outline: none;
           box-shadow: var(--shadow-3dp);
           cursor: pointer;
+          min-width: 10rem;
         }
 
         @media (any-hover: hover) {
@@ -115,14 +126,21 @@ export class HeroHeader extends BaseElement {
             padding: calc(2 * var(--base-spacing)) var(--base-spacing);
           }
 
-          h1 {
-            font-size: 1.5rem;
-            margin-bottom: 0.6rem;
+          [presentation] {
+            align-items: center;
+            text-align: center;
           }
 
-          h3 {
-            font-size: 1rem;
-            margin-bottom: 0.3rem;
+          [presentation] h1 {
+            font-size: 1.6rem;
+          }
+
+          [presentation] h3 {
+            font-size: 0.9rem;
+          }
+
+          [presentation] a {
+            align-self: center;
           }
         }
       `
