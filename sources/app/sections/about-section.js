@@ -115,24 +115,24 @@ export class AboutSection extends BaseElement {
                     href="https://www.ulaval.ca"
                     >Université Laval</a
                   >. J'y ai obtenu un baccalauréat en génie logiciel, dont je suis très fier. Avant
-                  de me lancer à mon compte, j'ai travaillé près de 4 ans pour une super
-                  <em class="italic">startup</em> qui s’appelle
-                  <a rel="noreferrer noopener" href="https://xpertsea.com">XpertSea</a>, où j'ai
-                  beaucoup appris sur les entreprises en pleine croissance et leurs défis. En dehors
-                  du travail, j'aime jouer de la musique (guitare et batterie), jardiner, faire de
-                  la planche à neige, aller en canot-camping et pêcher avec mon père.
+                  de me lancer à mon compte, j'ai travaillé près de 4 ans pour
+                  <a rel="noreferrer noopener" href="https://xpertsea.com">XpertSea</a>, une super
+                  <em class="italic">startup</em> où j'ai beaucoup appris sur les entreprises en
+                  pleine croissance et leurs défis. En dehors du travail, j'aime jouer de la musique
+                  (guitare et batterie), jardiner, faire de la planche à neige, aller en
+                  canot-camping et pêcher avec mon père.
                 `
               : html`
                   I live in beautiful
                   <a rel="noreferrer noopener" href="https://en.wikipedia.org/wiki/Quebec_City"
                     >Quebec City</a
-                  >! I decided to settle there after attending
+                  >! I decided to settle here after attending
                   <a rel="noreferrer noopener" href="https://www.ulaval.ca/en/">Université Laval</a
                   >. There I obtained a bachelor degree in software engineering, of which I'm very
-                  proud. Before going freelance, I worked almost 4 years for an amazing startup
-                  called <a rel="noreferrer noopener" href="https://xpertsea.com/">XpertSea</a>,
-                  where I learned a lot about growing companies and their challenges. Outside of
-                  work, I like playing music (guitar & drums), gardening, snowboarding,
+                  proud. Before going freelance, I worked almost 4 years for
+                  <a rel="noreferrer noopener" href="https://xpertsea.com/">XpertSea</a>, an amazing
+                  startup where I learned a lot about growing companies and their challenges.
+                  Outside of work, I like playing music (guitar & drums), gardening, snowboarding,
                   canoe-camping and fishing with my dad.
                 `}
           </p>
