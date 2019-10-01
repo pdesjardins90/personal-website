@@ -38,8 +38,8 @@ describe('<nav-bar>', () => {
   })
 
   describe('i18n', () => {
-    const frenchRoutes = ['#accueil', '#services', '#technologies', '#a-propos']
-    const englishRoutes = ['#home', '#services', '#technologies', '#about']
+    const frenchRoutes = ['#accueil', '#services', '#technologies', '#blogue', '#a-propos']
+    const englishRoutes = ['#home', '#services', '#technologies', '#blog', '#about']
     const getRoutes = () =>
       Array.from(component.shadowRoot.querySelectorAll('[href]'))
         .map(routableSection => routableSection.getAttribute('href'))

@@ -46,8 +46,8 @@ describe('<personal-website>', () => {
   describe('i18n', () => {
     let navigatorLanguage
 
-    const frenchRoutes = ['#accueil', '#services', '#technologies', '#a-propos']
-    const englishRoutes = ['#home', '#services', '#technologies', '#about']
+    const frenchRoutes = ['#accueil', '#services', '#technologies', '#blogue', '#a-propos']
+    const englishRoutes = ['#home', '#services', '#technologies', '#blog', '#about']
     const getRoutes = () =>
       Array.from(component.shadowRoot.querySelectorAll('[route]'))
         .map(routableSection => routableSection.getAttribute('route'))

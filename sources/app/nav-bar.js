@@ -324,6 +324,15 @@ export class NavBar extends BaseElement {
             <div underline></div>
           </a>
           <a
+            href="${this.language === 'fr' ? '#blogue' : '#blog'}"
+            ?active="${(this.language === 'fr' && this.activeRoute === '#blogue') ||
+              (this.language === 'en' && this.activeRoute === '#blog')}"
+            @click="${this.closeNavigationMenu}"
+          >
+            ${this.language === 'fr' ? 'Blogue' : 'Blog'}
+            <div underline></div>
+          </a>
+          <a
             href="${this.language === 'fr' ? '#a-propos' : '#about'}"
             ?active="${(this.language === 'fr' && this.activeRoute === '#a-propos') ||
               (this.language === 'en' && this.activeRoute === '#about')}"

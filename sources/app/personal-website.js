@@ -1,6 +1,7 @@
 import './nav-bar.js'
-import './sections/about-section.js'
 import './hero-header.js'
+import './sections/about-section.js'
+import './sections/blog-section.js'
 import './sections/services-section.js'
 import './sections/technologies-section.js'
 import { installRouter } from 'pwa-helpers/router.js'
@@ -123,6 +124,10 @@ export class PersonalWebsite extends BaseElement {
             route="#technologies"
             .language="${this.language}"
           ></technologies-section>
+          <blog-section
+            route="${this.language === 'fr' ? '#blogue' : '#blog'}"
+            .language="${this.language}"
+          ></blog-section>
           <about-section
             route="${this.language === 'fr' ? '#a-propos' : '#about'}"
             .language="${this.language}"
