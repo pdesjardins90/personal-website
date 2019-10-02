@@ -17,7 +17,7 @@ export class BlogSection extends BaseElement {
 
   async connectedCallback() {
     super.connectedCallback()
-    this.articles = await this.__articleApi.getArticles()
+    this.articles = await this.__articleApi.getMostRecentArticles({ amount: 2 })
   }
 
   static get styles() {
