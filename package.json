@@ -1,6 +1,6 @@
 {
   "name": "personal-website",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "My personal website, it's a simple progressive web application powered by web components!",
   "main": "index.html",
   "repository": "git@github.com:pdesjardins90/personal-website.git",
