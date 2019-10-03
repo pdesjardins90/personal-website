@@ -86,6 +86,7 @@ export class ServicesSection extends BaseElement {
           width: 50%;
           height: 0.2rem;
           margin: 0.8rem 0;
+          align-self: flex-end;
           background-color: var(--color-primary);
         }
 
@@ -106,7 +107,7 @@ export class ServicesSection extends BaseElement {
             fill: var(--color-primary);
           }
 
-          hr {
+          article hr {
             align-self: center;
           }
         }
@@ -131,37 +132,20 @@ export class ServicesSection extends BaseElement {
             <p>
               ${this.language === 'fr'
                 ? html`
-                    Le web est la technologie la plus accessible au monde. Tout le monde peut y
-                    accéder, peu importe le type d’appareil ou de navigateur utilisé. Les récentes
-                    innovations technologiques des navigateurs, telles que les
-                    <em class="italic">Web Components</em> et les
-                    <em class="italic">Service Workers</em>, permettent aux applications
-                    d'aujourd'hui d'être encore plus modulaires et performantes qu'autrefois,
-                    faisant du web un incontournable au coeur de toute stratégie technologique
-                    d’entreprise.
+                    Si vous avez besoin d'une interface pour que des gens puissent utiliser vos
+                    services, le web est probablement ce dont vous avez besoin. Tout le monde peut y
+                    accéder, peu importe le type d’appareil ou de navigateur utilisé. Je peux vous
+                    développer une application web moderne, utilisant les technologies les plus
+                    adaptées à votre contexte.
                   `
                 : html`
-                    The web is the most accessible technology in the world. Everyone can access it,
-                    no matter what kind of device or browser they use. Recent browser innovations,
-                    like
-                    <em class="italic">Web Components</em> and
-                    <em class="italic">Service Workers</em>, now allow web apps to be even more
-                    modular and performant than before, making the web an essential part of any
-                    enterprise technological strategy.
+                    If you need an interface for people to use your services, the web is probably
+                    just what you need. Everyone can access it, no matter what kind of device or
+                    browser they use. I can develop a modern web application for you, using the
+                    technologies that make the most sense in your context.
                   `}
             </p>
             <hr />
-            <p>
-              ${this.language === 'fr'
-                ? html`
-                    Je développe de telles applications depuis plusieurs années déjà et je peux vous
-                    aider à réaliser la vôtre, personnalisée selon vos besoins.
-                  `
-                : html`
-                    I’ve been developing such applications for a number of years now and can help
-                    you build your own, tailored to your own requirements.
-                  `}
-            </p>
           </article>
           <div>
             <figure>
@@ -190,34 +174,18 @@ export class ServicesSection extends BaseElement {
             <p>
               ${this.language === 'fr'
                 ? html`
-                    Comme toute entreprise moderne, vos données sont ce que vous avez de plus
-                    précieux. Qu’elles proviennent de capteurs physiques, d'interactions
-                    d'utilisateurs ou encore de vos opérations internes, elles peuvent vous aider à
-                    prendre d'importantes décisions stratégiques. Le meilleur moyen de tirer profit
-                    de vos données est de bâtir un système automatisé qui les récolte, les agrège et
-                    vous les rend disponibles pour visualisation et interprétation.
+                    Si vous avez besoin de récolter des données provenant d'objets connnectés,
+                    d'analyser les interactions qu'ont vos utilisateurs avec vos produits ou
+                    d'extraire des métriques de performance sur vos opérations internes, je peux
+                    bâtir des systèmes qui s'occuperont de ça pour vous.
                   `
                 : html`
-                    Your most valuable asset as a modern company is your data. Wether it comes from
-                    physical sensors, user interactions or your internal operations, it can help you
-                    make important business decisions. The best way to leverage your data, is to
-                    build an automated system that harvests, aggregates and present it to you in a
-                    meaningful way.
+                    If you need to harvest data from connected devices, analyze user interactions
+                    with your products or extract performance metrics from your internal operations,
+                    I can build systems that will take care of that for you.
                   `}
             </p>
             <hr />
-            <p>
-              ${this.language === 'fr'
-                ? html`
-                    J'ai travaillé sur des systèmes qui récoltaient des données de partout à travers
-                    le monde. Je peux vous aider à bâtir le vôtre, fait sur mesure pour votre
-                    entreprise.
-                  `
-                : html`
-                    I've worked on systems that harvested data from all around the world. I can help
-                    you build your own, tailored to your organization.
-                  `}
-            </p>
           </article>
           <div>
             <figure>
@@ -242,38 +210,19 @@ export class ServicesSection extends BaseElement {
             <p>
               ${this.language === 'fr'
                 ? html`
-                    Toute minute passée par un humain sur une activité automatisable est une minute
-                    gaspillée. Ce type de travail de bas niveau, souvent répétitif et monotone, peut
-                    être exécuté par des ordinateurs extrêmement rapidement. Les humains, en
-                    revanche, sont bien meilleurs à prendre des décisions de haut niveau et à
-                    s'adapter au contexte dynamique du travail de tous les jours. Libérez vos
-                    employés du travail de bas niveau en déléguant ces tâches à des ordinateurs et
-                    vous verrez vos coûts opérationnels diminuer, la bonne humeur de vos employés
-                    augmenter et votre pénurie de main d'oeuvre se dissiper.
+                    Votre équipe perd trop de temps à faire des tâches répétitives et monotones?
+                    Vous aimeriez les voir travailler sur des choses plus importantes à la place? Je
+                    peux développer des logiciels qui automatiseront ces tâches de bas niveau et qui
+                    aideront votre équipe à augmenter sa productivité.
                   `
                 : html`
-                    Every minute spent by a human on an automatable activity is a minute lost.
-                    Computers excel at low-level, repetitive and monotonous work. Humans, on the
-                    other hand, are way better at high-level decision-making and adapting to the
-                    day-to-day dynamic context of the workplace. Free your employees from low-level
-                    tasks by delegating them to computers and you’ll see your operational costs
-                    decrease, your employees' happiness rise and your labor shortage fade away.
-                  `}
-            </p>
-            <hr />
-            <p>
-              ${this.language === 'fr'
-                ? html`
-                    J'ai développé des systèmes automatisés qui ont aidés des entreprises à éliminer
-                    de longs et coûteux processus de bas niveau. Je peux vous aider vous aussi à
-                    augmenter la productivité de votre entreprise.
-                  `
-                : html`
-                    I've developed automated services that helped companies eliminate time-consuming
-                    and low-value processes. I can help you too increase your company's
+                    Your team spends too much time on repetitive and monotonous tasks? You'd like
+                    them to spend more time on stuff that matters instead? I can develop software
+                    that will automate this low-level work and help your team increase its
                     productivity.
                   `}
             </p>
+            <hr />
           </article>
           <div>
             <figure>
@@ -300,31 +249,21 @@ export class ServicesSection extends BaseElement {
             <p>
               ${this.language === 'fr'
                 ? html`
-                    Dans un monde où les technologies évoluent à vitesse fulgurante, l'innovation
-                    est la clé de la pérennité pour toute entreprise. Pour repousser les limites
-                    d'un marché ou en découvrir un nouveau, l'expérimentation et l'apprentissage
-                    continu doivent faire partie du quotidien.
+                    Vous avez une idée de produit géniale mais vous avez besoin d'un avis technique,
+                    d'une preuve de concept ou encore d'un prototype fonctionnel avant de commettre
+                    plus de ressources à ce projet? N'hésitez pas à m'en parler! Si je peux vous
+                    aider, je le ferai, ne serait-ce qu’en vous aidant à trouver quelqu’un qui
+                    aurait une expertise plus adaptée à vos besoins.
                   `
                 : html`
-                    In a world where technologies evolve at a staggering pace, innovation is the key
-                    to an enterprise's longevity. To redefine a market or to discover a new one,
-                    experimentation and continuous learning must be part of the daily operations.
+                    You have a great product idea but you need a technical advice, a proof of
+                    concept or a functional prototype made before committing more resources to the
+                    project? Don't hesitate to speak to me about it! If I can help you, I will, even
+                    if it's just by helping you find someone whose expertise better suits your
+                    needs.
                   `}
             </p>
             <hr />
-            <p>
-              ${this.language === 'fr'
-                ? html`
-                    Vous avez un projet spécial? N'hésitez pas à m'en parler! Si je peux vous aider,
-                    je le ferai, ne serait-ce qu’en vous aidant à trouver quelqu’un qui aurait une
-                    expertise plus adaptée à vos besoins.
-                  `
-                : html`
-                    Have a special project? Don't hesitate to speak to me about it! If I can help
-                    you, I will, even if it's just by helping you find someone whose expertise
-                    better suits your needs.
-                  `}
-            </p>
           </article>
           <div>
             <figure>
