@@ -26,7 +26,7 @@ export class ServicesSection extends BaseElement {
           grid-auto-rows: auto;
         }
 
-        li {
+        ul > li {
           display: flex;
         }
 
@@ -34,14 +34,14 @@ export class ServicesSection extends BaseElement {
           order: -1;
         }
 
-        li > div {
+        ul > li > div {
           flex: 2;
           display: flex;
           justify-content: center;
           align-items: center;
         }
 
-        li > div figure {
+        ul > li > div figure {
           width: 8rem;
           height: 8rem;
           display: flex;
@@ -52,7 +52,7 @@ export class ServicesSection extends BaseElement {
           box-shadow: var(--shadow-3dp);
         }
 
-        li > div svg {
+        ul > li > div svg {
           width: 5rem;
           height: 5rem;
           fill: var(--color-text-on-primary-high);
@@ -82,12 +82,21 @@ export class ServicesSection extends BaseElement {
           font-weight: 600;
         }
 
-        article hr {
-          width: 50%;
-          height: 0.2rem;
-          margin: 0.8rem 0;
-          align-self: flex-end;
-          background-color: var(--color-primary);
+        article p {
+          margin-bottom: 1rem;
+        }
+
+        article ol {
+          display: flex;
+          width: 100%;
+          justify-content: flex-end;
+        }
+
+        article ol li {
+          margin: 0 0.5rem;
+          font-family: var(--font-family-primary);
+          font-weight: 700;
+          color: var(--color-primary);
         }
 
         @media (max-width: 668px) {
@@ -95,7 +104,7 @@ export class ServicesSection extends BaseElement {
             grid-gap: 2rem;
           }
 
-          li > div {
+          ul > li > div {
             display: none;
           }
 
@@ -107,8 +116,8 @@ export class ServicesSection extends BaseElement {
             fill: var(--color-primary);
           }
 
-          article hr {
-            align-self: center;
+          article ol {
+            justify-content: center;
           }
         }
       `
@@ -145,7 +154,12 @@ export class ServicesSection extends BaseElement {
                     technologies that make the most sense in your context.
                   `}
             </p>
-            <hr />
+            <ol>
+              <li>#webcomponents</li>
+              <li>#pwa</li>
+              <li>#jamstack</li>
+              <li>#ui</li>
+            </ol>
           </article>
           <div>
             <figure>
@@ -185,7 +199,12 @@ export class ServicesSection extends BaseElement {
                     I can build systems that will take care of that for you.
                   `}
             </p>
-            <hr />
+            <ol>
+              <li>#api</li>
+              <li>#database</li>
+              <li>#charts</li>
+              <li>#tables</li>
+            </ol>
           </article>
           <div>
             <figure>
@@ -222,7 +241,12 @@ export class ServicesSection extends BaseElement {
                     productivity.
                   `}
             </p>
-            <hr />
+            <ol>
+              <li>#workers</li>
+              <li>#serverless</li>
+              <li>#webhooks</li>
+              <li>#cloud</li>
+            </ol>
           </article>
           <div>
             <figure>
@@ -263,7 +287,11 @@ export class ServicesSection extends BaseElement {
                     needs.
                   `}
             </p>
-            <hr />
+            <ol>
+              <li>#startup</li>
+              <li>#poc</li>
+              <li>#prototyping</li>
+            </ol>
           </article>
           <div>
             <figure>
