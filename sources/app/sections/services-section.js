@@ -141,16 +141,16 @@ export class ServicesSection extends BaseElement {
             <p>
               ${this.language === 'fr'
                 ? html`
-                    Si vous avez besoin d'une interface pour que des gens puissent utiliser vos
-                    services, le web est probablement ce dont vous avez besoin. Tout le monde peut y
-                    accéder, peu importe le type d’appareil ou de navigateur utilisé. Je peux vous
+                    Vous voulez offrir des services ou vendre vos produits sur internet? Une
+                    application web est probablement ce dont vous avez de besoin. Tout le monde peut
+                    y accéder, peu importe le type d’appareil ou de navigateur utilisé. Je peux vous
                     développer une application web moderne, utilisant les technologies les plus
                     adaptées à votre contexte.
                   `
                 : html`
-                    If you need an interface for people to use your services, the web is probably
-                    just what you need. Everyone can access it, no matter what kind of device or
-                    browser they use. I can develop a modern web application for you, using the
+                    You want to provide services or sell products on the internet? A web application
+                    is probably what you need. Everyone can access it, no matter what kind of device
+                    or browser they use. I can develop a modern web application for you, using the
                     technologies that make the most sense in your context.
                   `}
             </p>
@@ -273,18 +273,17 @@ export class ServicesSection extends BaseElement {
             <p>
               ${this.language === 'fr'
                 ? html`
-                    Vous avez une idée de produit géniale mais vous avez besoin d'un avis technique,
-                    d'une preuve de concept ou encore d'un prototype fonctionnel avant de commettre
-                    plus de ressources à ce projet? N'hésitez pas à m'en parler! Si je peux vous
+                    Si vous avez une idée de produit géniale, mais que vous avez besoin d'un avis
+                    technique, d'une preuve de concept ou encore d'un prototype fonctionnel avant
+                    d'y commettre plus de ressources, n'hésitez pas à m'en parler! Si je peux vous
                     aider, je le ferai, ne serait-ce qu’en vous aidant à trouver quelqu’un qui
                     aurait une expertise plus adaptée à vos besoins.
                   `
                 : html`
-                    You have a great product idea but you need a technical advice, a proof of
-                    concept or a functional prototype made before committing more resources to the
-                    project? Don't hesitate to speak to me about it! If I can help you, I will, even
-                    if it's just by helping you find someone whose expertise better suits your
-                    needs.
+                    If you have a great product idea, but you need a technical advice, a proof of
+                    concept or a functional prototype made before committing more resources, don't
+                    hesitate to speak to me about it! If I can help you, I will, even if it's just
+                    by helping you find someone whose expertise better suits your needs.
                   `}
             </p>
             <ol>
