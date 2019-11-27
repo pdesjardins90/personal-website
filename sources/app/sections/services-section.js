@@ -90,6 +90,7 @@ export class ServicesSection extends BaseElement {
           display: flex;
           width: 100%;
           justify-content: flex-end;
+          flex-wrap: wrap;
         }
 
         article ol li {
