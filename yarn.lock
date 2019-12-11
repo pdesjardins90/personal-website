@@ -1582,7 +1582,7 @@ babel-plugin-transform-object-rest-spread@^6.26.0:
     babel-plugin-syntax-object-rest-spread "^6.8.0"
     babel-runtime "^6.26.0"
 
-babel-polyfill@6.26.0, babel-polyfill@^6.26.0:
+babel-polyfill@6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
   integrity sha1-N5k3q8Z9eJWXCtxiHyhM2WbPIVM=
@@ -2343,10 +2343,15 @@ core-js-compat@^3.4.7:
     browserslist "^4.8.2"
     semver "^6.3.0"
 
-core-js@^2.4.0, core-js@^2.5.0, core-js@^2.6.9:
+core-js@^2.4.0, core-js@^2.5.0:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
   integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
+
+core-js@^3.0.0:
+  version "3.4.8"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.4.8.tgz#e0fc0c61f2ef90cbc10c531dbffaa46dfb7152dd"
+  integrity sha512-b+BBmCZmVgho8KnBUOXpvlqEMguko+0P+kXCwD4vIprsXC6ht1qgPxtb1OK6XgSlrySF71wkwBQ0Hv695bk9gQ==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -3282,16 +3287,17 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.0"
 
-fetch-mock@7.7.0:
-  version "7.7.0"
-  resolved "https://registry.yarnpkg.com/fetch-mock/-/fetch-mock-7.7.0.tgz#28c4cef45739b29419e9324637c84965abab979a"
-  integrity sha512-1EqaOdqexYqOx7tp77dltysWaNQybSzIqingcafmQK8w3aK13koNzuvqbEAiKhazo5N46mAkdRpQ6cWZQJUibw==
+fetch-mock@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/fetch-mock/-/fetch-mock-8.0.1.tgz#1ff298eef949c167a1a121294d647f25a080874e"
+  integrity sha512-omxXRmQJDWLbOpA907JMFNdjLkHAfOGIqcyS/1dJ/0EEyi19iIyYjT2nveT+4Nwmuh/HgRSsNwRl+HP690ZdGQ==
   dependencies:
-    babel-polyfill "^6.26.0"
-    core-js "^2.6.9"
+    babel-runtime "^6.26.0"
+    core-js "^3.0.0"
     glob-to-regexp "^0.4.0"
     lodash.isequal "^4.5.0"
     path-to-regexp "^2.2.1"
+    querystring "^0.2.0"
     whatwg-url "^6.5.0"
 
 figures@^1.7.0:
@@ -6250,6 +6256,11 @@ qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+
+querystring@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
+  integrity sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
 
 quick-lru@^1.0.0:
   version "1.1.0"

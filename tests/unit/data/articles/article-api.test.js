@@ -1,7 +1,6 @@
 import { expect } from '@open-wc/testing'
+import fetchMock from '../../../../node_modules/fetch-mock/esm/client.mjs'
 import { ArticleApi } from '../../../../sources/data/articles/article-api.js'
-
-const { fetchMock } = window
 
 describe('ArticleApi', () => {
   let api = null

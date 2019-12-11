@@ -9,10 +9,6 @@ module.exports = config => {
       },
       files: [
         {
-          pattern: 'node_modules/fetch-mock/dist/es5/client-bundle.js',
-          watched: false
-        },
-        {
           pattern: 'images/**/*',
           watched: false,
           included: false,
