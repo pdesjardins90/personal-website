@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
-    "@open-wc/building-rollup": "^0.15.3",
+    "@open-wc/building-rollup": "^0.21.1",
     "@open-wc/eslint-config": "^2.0.1",
     "@open-wc/prettier-config": "^0.1.10",
     "@open-wc/testing": "^2.3.3",
@@ -37,13 +37,13 @@
     "es-dev-server": "^1.17.2",
     "eslint": "^6.3.0",
     "fetch-mock": "^8.0.1",
-    "husky": "^3.0.5",
-    "lint-staged": "^9.2.5",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.18.2",
     "rollup": "^1.20.3",
     "rollup-plugin-cpy": "^2.0.1",
-    "sinon": "^7.4.2",
-    "workbox-cli": "^4.3.1"
+    "sinon": "^9.0.0",
+    "workbox-cli": "^5.0.0"
   },
   "lint-staged": {
     "*.js": [

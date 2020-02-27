@@ -7,7 +7,6 @@ module.exports = {
   globIgnores: dynamicFolders.map(dynamicFolder => `${dynamicFolder}/**/*`),
   globPatterns: ['**/*.*'],
   importScripts: [],
-  importWorkboxFrom: 'local',
   navigateFallback: '/index.html',
   runtimeCaching: dynamicFolders.map(dynamicFolder => ({
     urlPattern: new RegExp(`/${dynamicFolder}/`),
