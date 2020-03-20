@@ -14,7 +14,7 @@ module.exports = {
       files: ['**/tests/**/*.js'],
       rules: {
         'no-console': 'off',
-        'no-unused-expressions': 'off',
+        'babel/no-unused-expressions': 'off',
         'class-methods-use-this': 'off'
       }
     }

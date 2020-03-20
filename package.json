@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
-    "@open-wc/building-rollup": "^0.21.1",
+    "@open-wc/building-rollup": "^0.22.9",
     "@open-wc/eslint-config": "^2.0.1",
     "@open-wc/prettier-config": "^0.1.10",
     "@open-wc/testing": "^2.3.3",
@@ -36,7 +36,7 @@
     "deepmerge": "^4.0.0",
     "es-dev-server": "^1.17.2",
     "eslint": "^6.3.0",
-    "fetch-mock": "^8.0.1",
+    "fetch-mock": "^9.2.1",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "prettier": "^1.18.2",

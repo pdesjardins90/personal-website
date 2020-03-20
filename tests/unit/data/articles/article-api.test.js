@@ -1,5 +1,5 @@
 import { expect } from '@open-wc/testing'
-import fetchMock from '../../../../node_modules/fetch-mock/esm/client.mjs'
+import fetchMock from 'fetch-mock/esm/client.js'
 import { ArticleApi } from '../../../../sources/data/articles/article-api.js'
 
 describe('ArticleApi', () => {
